@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Cargo</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Background blur overlay */
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/login-cargo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); 
+  z-index: -1; 
+}
+
+/* Centering the card */
+.login-from {
+  position: relative;
+  z-index: 1; 
+  height: 100vh;
+}
+
+/* Hover Card Effect */
+.hover-card {
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-card:hover {
+  border: 2px solid #e1153e; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05); 
+  z-index: 1;
+}
+
+.btn {
+    background-color: #e1153e;
+    color: #fff;
+}
+.btn:hover {
+    background-color: #f70837;
+    color: #fff;
+}
+
+.email ,.password{
+    font-style: bold !important;
+    font-weight: 600;
+}
+
+.forgot-pass a{
+    /* float: inline-end; */
+    text-decoration: none;
+
+}
+
+/* Center the icon at the top of the form */
+.icon-container {
+  position: absolute;
+  top: -35px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff; 
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.bi-person-circle {
+  font-size: 30px; 
+  color: #e1153e; 
+}
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="background-blur"></div>
+
+    
+    <div class="login-from d-flex justify-content-center align-items-center">
+        <form class="card p-4 hover-card" id="login" action="/login" method="post" style="width: 30rem;">
+            <div class="icon-container">
+                <!-- <i class="bi bi-send"></i> -->
+                <i class="bi bi-person-circle"></i>
+              </div>
+        <div class="form-group">
+            
+          <label for="exampleInputEmail1" class="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="form-group pt-4">
+          <label for="exampleInputPassword1" class="password">Password</label>
+          <input type="password" class="form-control" id="enterpassword" name="enterpassword" placeholder="Password" required>
+        </div>
+        <div class="form-group d-flex justify-content-between mt-2">
+            <a href="signup.html" class="" >Signup</a>
+            <a href="forgotpass.html" class="" >Forgot password?</a>
+        </div>
+        <div class="login-btn pt-4">
+        <button type="submit" class="btn w-100">Login</button>
+        </div>
+        <div id="form-message" class="mt-3"></div>
+      </form>
+    </div>
+    
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function() {
+            $("#login").on("submit", function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                
+                const formData = {
+                    email: $("#email").val(),
+                    enterpassword: $("#enterpassword").val()
+                };
+                
+                $.ajax({
+                    type: "POST",
+                    url: "/login",
+                    data: formData,
+                    success: function(response) {
+                        // Show success message below the form
+                        $("#form-message").html(`<div class="alert alert-success">${response}</div>`);
+                        
+                        // Reset the form fields after showing the success message
+                        $("#login")[0].reset(); // Reset the form
+    
+                        // Clear the message after 3 seconds
+                        setTimeout(function() {
+                          window.location.href = "index.html";
+                            $("#form-message").html(""); // Clears the message
+                        }, 5000); // 3000 milliseconds = 3 seconds
+                    },
+                    error: function(err) {
+                        // Show error message below the form
+                        $("#form-message").html(`<div class="alert alert-danger">There was an error: ${err.responseText}</div>`);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

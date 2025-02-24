@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Service</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3 fixed-top">
+            <div class="container">
+                <!-- Logo on the left -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo-bg.png" alt="Logo" width="150">
+                </a>
+
+                <!-- Toggle button for small screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar items on the right -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" style="gap: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="our-service.html">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="request-quotation.html">Request Quotation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="margin-top: 70px;">
+        <div class="Company-promise py-5">
+            <span class="company-promise-heading ">
+                Shipper Information
+            </span>
+            <!-- <p class="company-promise-p">
+                We put the satisfaction of our customers above all else. As a result,
+                we have built an enviable reputation as Malaysia’s leading and most
+                trusted cargo experts. We aim to ensure that every shipment is
+                delivered on time and in good condition.
+            </p> -->
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <div class="container " style="padding: 0 150px 0 150px;">
+            
+
+                <div class="col-md-12">
+                    <form id="shipper-form" action="/submit-form" method="post">
+                        <div class="my-4">
+                            <h3 style="text-transform: uppercase; font-weight: 600;">Shipper Information</h3>
+                        </div>
+                        <div class="mb-4 d-flex gap-5">
+                            <input type="text" class="form-control" id="fName" name="fName" required placeholder="First Name">
+                            <input type="text" class="form-control" id="lName" name="lName" required placeholder="Last Name">
+                        </div>
+                        <div class="mb-4 d-flex gap-5">
+                            <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
+                            <input type="text" class="form-control" id="company" name="company" required placeholder="Company">
+                        </div>
+                        <div class="mb-4 d-flex gap-5">
+                            <input type="text" class="form-control" id="address" name="address" required placeholder="Address">
+                            <input type="text" class="form-control" id="city" name="city" required placeholder="City">
+                        </div>
+                        <div class="mb-4 d-flex gap-5">
+                            <input type="text" class="form-control" id="zip" name="zip" required placeholder="Zip">
+                            <input type="text" class="form-control" id="telephone" name="telephone" required placeholder="Telephone (including country code)">
+                        </div>
+                        <div class="my-4">
+                            <h3 style="text-transform: uppercase; font-weight: 600;">Package Details</h3>
+                        </div>
+                        <div class="mb-4 d-flex gap-5 col-md-8">
+                            <input type="text" class="form-control" id="number-of-pic" name="numberOfPic" required placeholder="Number of Pieces">
+                            <input type="text" class="form-control" id="total-weight" name="totalWeight" required placeholder="Total Weight (KG)">
+                        </div>
+                        <div class="mb-4 d-flex gap-5 col-md-8">
+                            <input type="text" class="form-control" id="height" name="height" required placeholder="Height (cm)">
+                            <input type="text" class="form-control" id="width" name="width" required placeholder="Width (cm)">
+                            <input type="text" class="form-control" id="depth" name="depth" required placeholder="Depth (cm)">
+                        </div>
+                        <div class="mb-4 col-md-8">
+                            <input type="text" class="form-control" id="commodity" name="commodity" required placeholder="Commodity">
+                        </div>
+                        <div class="mb-4 col-md-8">
+                            <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-control Send-button d-flex justify-content-center align-items-center">
+                                <button type="submit" class="submit-btn1x">SUBMIT</button>
+                            </label>
+                        </div>
+                        <!-- Message placeholder -->
+                        <div id="form-message" class="mt-3"></div>
+                    </form>
+                    
+                    
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------- -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Address Section (Left) -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="mb-0">Copyright © Cargo india 2025, All rights reserved.</p>
+
+
+                </div>
+
+                <!-- Social Icons Section (Center) -->
+                <div class="col-md-4 mb-3 mb-md-0 text-center">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/glorycargoasiaMY/
+                        "><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+
+                <!-- Copyright Section (Right) -->
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0">Cargo India Asia 123, Connaught Place WH001 Delhi Hub 500, NH-8, Near IGI Airport
+                        Delhi 110037..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- ------------------------------------------------------------------------------ -->
+    <script src="https://kit.fontawesome.com/4bcc2d2a29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#shipper-form").on("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const formData = {
+            fName: $("#fName").val(),
+            lName: $("#lName").val(),
+            email: $("#email").val(),
+            company: $("#company").val(),
+            address: $("#address").val(),
+            city: $("#city").val(),
+            zip: $("#zip").val(),
+            telephone: $("#telephone").val(),
+            numberOfPic: $("#number-of-pic").val(),
+            totalWeight: $("#total-weight").val(),
+            height: $("#height").val(),
+            width: $("#width").val(),
+            depth: $("#depth").val(),
+            commodity: $("#commodity").val(),
+            message: $("#message").val(),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/submit-form",
+            data: formData,
+            success: function(response) {
+                $("#form-message").html(`<div class="alert alert-success">${response}</div>`); // Show success message
+                
+                $("#shipper-form")[0].reset(); // Reset the form
+
+                // Clear the message after 3 seconds
+                setTimeout(function() {
+                        $("#form-message").html(""); // Clears the message
+                    }, 3000); // 3000 milliseconds = 3 seconds
+            },
+            error: function(err) {
+                $("#form-message").html(`<div class="alert alert-danger">${err.responseText}</div>`); // Show error message
+            }
+        });
+    });
+});
+</script>
+
+
+
+</body>
+</html>

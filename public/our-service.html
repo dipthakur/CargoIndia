@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Service</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3 fixed-top">
+            <div class="container">
+                <!-- Logo on the left -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo-bg.png" alt="Logo" width="150">
+                </a>
+
+                <!-- Toggle button for small screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar items on the right -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" style="gap: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="our-service.html">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="request-quotation.html">Request
+                                Quotation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="margin-top: 70px;">
+        <div class="Company-promise py-5">
+            <span class="company-promise-heading">
+                The Company promise
+            </span>
+            <p class="company-promise-p">
+                We put the satisfaction of our customers above all else. As a result,
+                we have built an enviable reputation as Malaysia’s leading and most
+                trusted cargo experts. We aim to ensure that every shipment is
+                delivered on time and in good condition.
+            </p>
+        </div>
+    </div>
+
+    <div class="ourService">
+        <div class="header">
+            <h1>Our Services</h1>
+            <p class="our-services-p">Discover all the possibilities with us now</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-sm-4 mb-3 mb-sm-0 card-padding">
+                    <div class="card" style="width: 18rem; height: 12rem;">
+                        <div class="card-body text-center" onclick="myFunction('alert1' , 'request-quotation.html')">
+                            <i class="bi bi-shop" style="font-size: 40px; padding-bottom: 20px; color: #202e59;"></i>
+                            <div class="import" style="font-size: 18px; font-weight: 600;">
+                                <a href="javascript:void(0)" style="color: #202e59; text-decoration: none;"
+                                    onclick="myFunction('alert1', 'request-quotation.html' )">SALES & MARKETING</a><br>
+                                <button class="hover-underline-animation"
+                                    style="background-color: #fff; color: #e1153e; border: none;">Read More..</button>
+                            </div>
+                        </div>
+                        <!-- Custom Alert Box -->
+                        <div id="alert1" class="alert-box">
+                            <div class="alert-content">
+                                <span class="close-btn" onclick="closeAlert('alert1', 'request-quotation.html' )"><i
+                                        class="bi bi-x-lg"></i></span>
+                                <ul id="alert-message">
+                                    <li>Expert knowledge of local and international markets, innovative sales strategies
+                                        tailored to transportation companies.</li>
+                                    <li>Experienced and highly motivated sales and operations team.</li>
+                                    <li>Value-added services including personalized incentive schemes and face-to-face
+                                        meetings.</li>
+                                    <li>In-depth marketing strategies incorporating direct and indirect methods.</li>
+                                    <li>Continuous promotion of the transportation company brand in the market.</li>
+                                    <li>Organization of corporate and promotional events alongside attendance at key
+                                        industry events.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-sm-4 mb-3 mb-sm-0 card-padding ">
+                    <div class="card" style="max-width: 18rem; height: 12rem;">
+                        <div class="card-body text-center" onclick="myFunction('alert2', 'request-quotation.html')">
+                            <i class="fa-solid fa-plane"
+                                style="font-size: 40px; padding-bottom: 20px; color: #202e59;"></i>
+                            <div class="import" style="font-size: 18px; font-weight: 600;">
+                                <a href="javascript:void(0)" style="color: #202e59; text-decoration: none;"
+                                    onclick="myFunction('alert2', 'request-quotation.html')">CUSTOM CLEARANCE</a>
+                                <button class="hover-underline-animation"
+                                    style="background-color: #fff; color: #e1153e; border: none;">Read More..</button>
+                            </div>
+                        </div>
+                        <!-- Custom Alert Box -->
+                        <div id="alert2" class="alert-box">
+                            <div class="alert-content">
+                                <span class="close-btn" onclick="closeAlert('alert2', 'request-quotation.html')"><i
+                                        class="bi bi-x-lg"></i></span>
+                                <ul id="alert-message">
+                                    <li>Import / Export Customs Clearance Service.</li>
+                                    <li>Import Duty & Tax Assessment.</li>
+                                    <li>Classification of goods.</li>
+                                    <li>Import Duty & Tax Assessment.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-sm-4 mb-3 mb-sm-0 card-padding">
+                    <div class="card" style="max-width: 18rem; height: 12rem;">
+                        <div class="card-body text-center" onclick="myFunction('alert3', 'request-quotation.html')">
+                            <i class="bi bi-person-workspace"
+                                style="font-size: 40px; padding-bottom: 20px; color: #202e59;"></i>
+                            <div class="import" style="font-size: 18px; font-weight: 600;">
+                                <a href="javascript:void(0)" style="color: #202e59; text-decoration: none;"
+                                    onclick="myFunction('alert3', 'request-quotation.html')">OPERATIONS & CUSTOMER
+                                    SERVICE
+                                </a>
+                                <button class="hover-underline-animation"
+                                    style="background-color: #fff; color: #e1153e; border: none;">Read More..</button>
+                            </div>
+                        </div>
+                        <!-- Custom Alert Box -->
+                        <div id="alert3" class="alert-box">
+                            <div class="alert-content">
+                                <span class="close-btn" onclick="closeAlert('alert3', 'request-quotation.html')"><i
+                                        class="bi bi-x-lg"></i></span>
+                                <ul id="alert-message">
+                                    <li>Efficient and experienced cargo operations teams.
+                                    </li>
+                                    <li>Highest standard of customer service. Close liaison with suppliers to ensure
+                                        high-quality service levels.
+                                    </li>
+                                    <li>Monitor and assist suppliers to maximize revenue on every flight.
+                                    </li>
+                                    <li>Long-established relationships with local handling and trucking companies.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-sm-4 mb-3 mb-sm-0 card-padding">
+                    <div class="card" style="max-width: 18rem; height: 12rem;">
+                        <div class="card-body text-center" onclick="myFunction('alert4', 'request-quotation.html')">
+                            <i class="fa-solid fa-ship"
+                                style="font-size: 40px; padding-bottom: 20px; color: #202e59; "></i>
+                            <div class="import" style="font-size: 18px; font-weight: 600;">
+                                <a href="javascript:void(0)" class="hover-underline-animation"
+                                    style="color: #202e59; text-decoration: none;"
+                                    onclick="myFunction('alert4', 'request-quotation.html')">FREIGHT FORWARDING
+                                </a>
+                                <button class="hover-underline-animation"
+                                    style="background-color: #fff; color: #e1153e; border: none;">Read More..</button>
+                            </div>
+                        </div>
+                        <!-- Custom Alert Box -->
+                        <div id="alert4" class="alert-box">
+                            <div class="alert-content">
+                                <span class="close-btn" onclick="closeAlert('alert4', 'request-quotation.html')"><i
+                                        class="bi bi-x-lg"></i></span>
+                                <ul id="alert-message">
+                                    <li>We assure your on-time shipments and with our extensive global freight
+                                        forwarding network alliances. We able to provide excellent service lanes and
+                                        connectivity to major gateways.
+                                    </li>
+                                    <li>We assure you peace of mind with our expert level Clearance Officers that has
+                                        sound local customs regulation knowhow for clearances services at major shipping
+                                        gateways.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-sm-4 mb-3 mb-sm-0 card-padding">
+                    <div class="card" style="max-width: 18rem; height: 12rem;">
+                        <div class="card-body text-center" onclick="myFunction('alert5', 'request-quotation.html')">
+                            <i class="bi bi-house-gear"
+                                style="font-size: 40px; padding-bottom: 20px; color: #202e59;"></i>
+                            <div class="import" style="font-size: 18px; font-weight: 600;">
+                                <a href="javascript:void(0)" style="color: #202e59; text-decoration: none;"
+                                    onclick="myFunction('alert5', 'request-quotation.html')">WAREHOUSE MANAGEMENT
+                                </a>
+                                <button class="hover-underline-animation"
+                                    style="background-color: #fff; color: #e1153e; border: none;">Read More..</button>
+                            </div>
+                        </div>
+                        <!-- Custom Alert Box -->
+                        <div id="alert5" class="alert-box">
+                            <div class="alert-content">
+                                <span class="close-btn" onclick="closeAlert('alert5', 'request-quotation.html')"><i
+                                        class="bi bi-x-lg"></i></span>
+                                <ul id="alert-message">
+                                    <li>Short-term and long-term storage.
+                                    </li>
+                                    <li>Cargo loading and unloading.
+                                    </li>
+                                    <li>Cargo labeling and packing.
+                                    </li>
+                                    <li>Packing services.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-sm-4 mb-3 mb-sm-0 card-padding">
+                    <div class="card" style="max-width: 18rem; height: 12rem;">
+                        <div class="card-body text-center" onclick="myFunction('alert6' , 'request-quotation.html')">
+                            <i class="bi bi-person-circle"
+                                style="font-size: 40px; padding-bottom: 20px; color: #202e59;"></i>
+                            <div class="import" style="font-size: 18px; font-weight: 600;">
+                                <a href="javascript:void(0)" style="color: #202e59; text-decoration: none;"
+                                    onclick="myFunction('alert6' , 'request-quotation.html')">ACCOUNT & FINANCE
+                                </a>
+                                <button class="hover-underline-animation"
+                                    style="background-color: #fff; color: #e1153e; border: none;">Read More..</button>
+                            </div>
+                        </div>
+                        <!-- Custom Alert Box -->
+                        <div id="alert6" class="alert-box">
+                            <div class="alert-content">
+                                <span class="close-btn" onclick="closeAlert('alert6' , 'request-quotation.html')"><i
+                                        class="bi bi-x-lg"></i></span>
+                                <ul id="alert-message">
+                                    <li>Dedicated finance teams.
+                                    </li>
+                                    <li>Punctual and accurate payments on agreed dates.
+                                    </li>
+                                    <li>Claims dealt with promptly and according to carrier company procedures.
+                                    </li>
+                                    <li>A financially sound organization.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------- -->
+    <div class="footer">
+        <footer class="custom-footer">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <!-- Address Section (Left) -->
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <p class="mb-0">Copyright © Cargo India 2025, All rights reserved.</p>
+
+
+                    </div>
+
+                    <!-- Social Icons Section (Center) -->
+                    <div class="col-md-4 mb-3 mb-md-0 text-center">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/
+                        "><i class="fab fa-facebook-f"></i></a>
+                            <!-- <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+
+                    <!-- Copyright Section (Right) -->
+                    <div class="col-md-4 text-md-end">
+                        <p class="mb-0">Cargo India Asia 123, Connaught Place WH001 Delhi Hub 500, NH-8, Near IGI
+                            Airport
+                            Delhi 110037.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- ------------------------------------------------------------------------------ -->
+    <script src="https://kit.fontawesome.com/4bcc2d2a29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!-- ----------------------------------Alert Script------------------------------- -->
+
+    <script>
+        function myFunction(alertId) {
+            document.getElementById(alertId).style.display = "block";
+        }
+
+        function closeAlert(alertId) {
+            document.getElementById(alertId).style.display = "none";
+        }
+
+        // ------------------------redirectURL------------------------
+
+        function myFunction(alertId, redirectUrl) {
+            // Show the alert box
+            document.getElementById(alertId).style.display = 'block';
+
+            // After 3 seconds (3000ms), redirect to the specified URL
+            setTimeout(function () {
+                window.location.href = redirectUrl;
+            }, 3000); // 3 seconds delay
+        }
+
+        function closeAlert(alertId) {
+            document.getElementById(alertId).style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>
